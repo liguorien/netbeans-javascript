@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontscolors>
+    <fontcolor name="js-methods" foreColor="000077" default="default"/>
+    <fontcolor name="js-number-literal" default="number"/>
+    <fontcolor name="js-line-comment" foreColor="008800" default="comment"/>
+    <fontcolor name="js-string-literal" foreColor="99006B" default="string"/>
+    <fontcolor name="js-char-literal" foreColor="99006B" default="char"/>
+    <fontcolor name="js-hex-literal" default="default"/>
+    <fontcolor name="js-operators"  foreColor="CC0000" default="operator"/>
+    <fontcolor name="js-keywords" foreColor="0000AA" default="keyword" />
+    <fontcolor name="js-identifier" default="default"/>    
+    <fontcolor name="js-block-comment" foreColor="008800" default="comment"/>    
+    <fontcolor name="js-regexp" foreColor="333333" default="default"/>  
+</fontscolors>

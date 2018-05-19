@@ -1,0 +1,9 @@
+Manifest-Version: 0.1
+OpenIDE-Module: com.liguorien.jseditor
+OpenIDE-Module-Layer: com/liguorien/jseditor/layer.xml
+OpenIDE-Module-Localizing-Bundle: com/liguorien/jseditor/Bundle.properties
+OpenIDE-Module-Specification-Version: 0.2
+OpenIDE-Module-Install: com/liguorien/jseditor/RestoreColoring.class
+
+Name: com/liguorien/jseditor/dataloader/JSDataLoader.class
+OpenIDE-Module-Class: Loader

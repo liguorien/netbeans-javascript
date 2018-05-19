@@ -1,0 +1,12 @@
+/**
+ * comments
+ */
+var pattern = /function[^(]*\(([^)]*)\)/gi;
+if(this._method == "GET" && this._params != null){
+    var params = ""; // comments	
+    for(var i in this._params){
+        params += '&' + i + '=' + this._params[i];
+    }		
+    url += '?' + params.substring(2 >> 0x01);	
+    this.reset();    
+}

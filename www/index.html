@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>NetBeans JavaScript Editor</title>
+        <meta http-equiv="content-type" content="text/xml; charset=iso-8859-1" />
+        <style type="text/css">
+            * {	font-family: Trebuchet MS, Verdana, Arial; }    
+            a { text-decoration:none; color: #666666;}
+            a:hover { text-decoration:underline; }
+            #menu a{ color:#666666; padding: 6px; text-decoration: none; background-color: #EEEEEE; border: 1px solid #DDDDDD; }
+            #menu a:hover{ background-color: #DDDDDD; border: 1px solid #AAAAAA; }
+            #menu li, #screenshots li { display: inline; }
+            #content li { list-style-type:none; }    
+            #features li{ list-style-type:square; }
+            code {font-size: -4; font-family: Times, Arial, Verdana;}
+            #copy {padding-top:50px; }
+            h2{margin-top:20px;}
+            th { border: 1px solid #999999; background-color: #EEEEEE; }
+            td { border: 1px solid #999999; }
+        </style>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>    
+        <h1>NetBeans JavaScript Editor <a href="http://platform.netbeans.org/"><img src="http://www.netbeans.org/images/built-on-nb.gif" style="border:0px" width="88" height="36" alt="Created with NetBeans!"/></a></h1>
+        <ul id="menu">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#license">License</a></li>
+            <li><a href="#documentation">Documentation</a></li>  
+            <li><a href="#about">About</a></li>
+        </ul>
+        <ul id="content">
+            <li id="intro">
+                <h2>Introduction</h2>
+                <p>The goal of this project is to provide JavaScript support to <a href="http://www.netbeans.org">NetBeans IDE 5.0</a>.</p>
+            </li>
+            <li id="download">
+                <h2>Download</h2>
+                <ul>
+                    <li>NetBeans Update Center : <a href="http://www.liguorien.com/download/jseditor/updates.xml">http://www.liguorien.com/download/jseditor/updates.xml</a> (<a href="http://blogs.sun.com/roller/page/geertjan/20060113">How To</a>)</li> 
+                    <li><a href="download/com-liguorien-jseditor.nbm">NetBeans JavaScript Editor 0.2 binairies</a> (NBM)</li> 
+                    <li><a href="download/com-liguorien-jseditor-02.zip">NetBeans JavaScript Editor 0.2 sources</a></li>
+                </ul>            
+            </li>           
+            <li id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Syntax highlighting.</li>
+                    <li>Code completion for native objects and functions.</li>
+                    <li><a href="http://editor.netbeans.org/project/editor/doc/UserView/UserView.html">All NetBeans editor's features</a></li>
+                    <li>Generation of JavaScript class skeleton.</li>
+                    <li>Generation of AJAX callback from a template. (<a href="#ajaxtemplate">How To</a>)</li>                    
+                </ul>
+            </li>
+            <li id="license">
+                <h2>License</h2>
+                <p>Sources and binairies are released under the <a href="http://www.netbeans.org/about/legal/spl.html">SPL</a> license.</p>
+            </li>
+            <li id="documentation">
+                <h2>Documentation</h2>
+                <ul>
+                    <li id="ajaxtemplate">
+                        <h3>How to generate an AJAX callback from a template</h3>
+                        <p>To write an AJAX callback that render complex HTML from a complex XML document can be a difficult and frustating task,  you have to do a lot of String concatenation and escaping. You also have to read the "responseXML" DOM with a lot of repetitive use of <em>getElementsByTagName(), firstChild, childNodes</em>, etc...</p>
+                        <p>This problem doesn't exists anymore with the NetBeans JavaScript Editor! It provide a feature that convert a HTML template into JavaScript code.  However, you have to learn a very simple template language for the dynamic part.</p>
+                        <p>The dynamic part is very limited but it can be used in a lot of the case.</p>
+                        <ul>
+                            <li id="variableoutput">
+                                <h4>Variable Output</h4>
+                                <p>The syntax for a variable output is the following : <em><strong>${</strong>expression<strong>}</strong></em></p>
+                                <p>The expression begin with a slash of a variable identifier defined in a <a href="#foreach">forEach loop</a>.  The slash '/' is a reference to the root element in the XML document.  You don't have to specify the node name of the root element in the expression.  If you only output a reference to a node(with a slash or a variable identifier), it will output his first text node. </p>
+                                <p>Once you obtained a reference(with a slash or a variable identifier), you can output both attributes and child nodes :</p>
+                                <table>
+                                    <tr>
+                                        <th>Expression</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>${/@title}</td>
+                                        <td>This expression will output the "title" attribute of the root element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>${/title}</td>
+                                        <td>This expression will output the text node of the "title" child of the root element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>${/title.@cssClass}</td>
+                                        <td>This expression will output the "cssClass" attribute of the "title" child of the root element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>${account.contact.@firstName}</td>
+                                        <td>This expression will output the "firstName" attribute of the "contact" child of the "account" variable declared in a <a href="#foreach">forEach loop</a>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>${account.contact.description}</td>
+                                        <td>This expression will output the text node of the "description" child of the "contact" child of the "account" variable declared in a <a href="#foreach">forEach loop</a>.</td>
+                                    </tr>
+                                </table>                               
+                            </li>
+                            <li id="foreach">
+                                <h4>ForEach Loop</h4>
+                                <p>You can iterate on a NodeList with a forEach loop</p>
+                                <p>The syntax for is the following : <code><br/><br/>&lt;forEach <strong>var</strong>="account" <strong>items</strong>="/account.contact"&gt;<br/><em>LOOP CONTENT</em><br/>&lt;/forEach&gt;</code></p>
+                                <p>The variable identifier in the "var" attribute is can used by a variable output or by a nested loop.</p>
+                                <p>The syntax for the "items" attribute is similar to the variable output syntax but with some differences. The '@' is not used since it's impossible to iterate over an attribute. You can use a double slash (//) for a recursive lookup in the document. You can use a double dot (..) for a recursive lookup on a specified node.  If you use a single dot, the NodeList returned will only contains children of the first level of the node.</p>
+                                <table>
+                                    <tr>
+                                        <th>Expression</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>/contact</td>
+                                        <td>Return a NodeList that contains all "contact" children of the root element.</td>
+                                    </tr>                                   
+                                    <tr>
+                                        <td>contact.task</td>
+                                        <td>Return a NodeList that contains all "task" children of the contact variable.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>contact..task</td>
+                                        <td>Return a NodeList that contains all "task" children contact variable regarless of the node level.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>//task</td>
+                                        <td>Return a NodeList that contains all "task" element in the document.</td>
+                                    </tr>
+                                </table>   
+                            </li>   
+                            <li>
+                                <h4>Exemple</h4>
+                                <p>Here is an exemple of what a template look like :</p>
+                                <img src="images/ajaxtemplate.gif" alt=""/>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li id="about">
+                <h2>About</h2>
+                <p>This JavaScript editor has been developped on the <a href="http://www.netbeans.org/products/platform/">NetBeans Platform 5.0</a>. The development is for short terms and there is nothing planned for the future since <a href="http://www.netbeans.org/products/ide/">NetBeans IDE</a> will provide JavaScript support in future version.</p>
+                <p>Visit my <a href="http://www.liguorien.com/blog/">blog</a>(FR) for more technical infos, or <script type="text/javascript">sh0w3M41l("218;444;198;184;216;420;194;436;232;444;208;256;220;404;210;456;222;468;206;420;216;","contact me");</script> me by email.(Nicolas D&eacute;sy)</p>
+            </li>
+            <li id="copy">Copyright &copy; 2006 Nicolas D&eacute;sy. All rights reserved</li>
+        </ul>
+    </body>
+</html>

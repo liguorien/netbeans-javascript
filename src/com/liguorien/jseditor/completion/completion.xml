@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completion>
+    <scope name="global">
+        <item name="alert(&lt;b&gt;message&lt;/b&gt;)" type="method" />
+        <item name="document" type="field" />
+        <item name="window" type="field" />
+        <item name="confirm(&lt;b&gt;message&lt;/b&gt;)" type="method" />
+        <item name="parseInt(&lt;b&gt;value&lt;/b&gt;)" type="method" />
+        <item name="parseFloat(&lt;b&gt;value&lt;/b&gt;)" type="method" />
+        <item name="escape(&lt;b&gt;value&lt;/b&gt;)" type="method" />
+        <item name="unescape(&lt;b&gt;value&lt;/b&gt;)" type="method" />
+        <item name="event" type="field" />
+        <item name="Math" type="class" />
+        <item name="String" type="class" />
+        <item name="Boolean" type="class" />
+        <item name="RegExp" type="class" />
+        <item name="Number" type="class" />
+        <item name="XMLHttpRequest" type="class" />
+        <item name="ActiveXObject" type="class" />
+    </scope>
+    
+    <scope name="Math">
+        <item name="E" type="field"/>
+        <item name="LN10" type="field"/>
+        <item name="LN2" type="field"/>
+        <item name="LOG10E" type="field"/>
+        <item name="LOG2E" type="field"/>
+        <item name="PI" type="field"/>
+        <item name="SQRT1_2" type="field"/>
+        <item name="SQRT2" type="field"/>
+        <item name="abs(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="acos(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="asin(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="atan(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="atan2(&lt;b&gt;x, y&lt;/b&gt;)" type="method"/>
+        <item name="ceil(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="cos(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="exp(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="floor(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="log(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="max(&lt;b&gt;nb1, nb2&lt;/b&gt;)" type="method"/>
+        <item name="min(&lt;b&gt;nb1, nb2&lt;/b&gt;)" type="method"/>
+        <item name="pow(&lt;b&gt;nb1, nb2&lt;/b&gt;)" type="method"/>
+        <item name="random()" type="method"/>
+        <item name="round(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="sin(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="sqrt(&lt;b&gt;number&lt;/b&gt;)" type="method"/>
+        <item name="tan(&lt;b&gt;number&lt;/b&gt;)" type="method"/>        
+    </scope>   
+    
+    <scope name="document">
+        <item name="activeElement" type="field"/>
+        <item name="alinkColor" type="field"/> 
+        <item name="anchors" type="array"/> 
+        <item name="applets" type="array"/> 
+        <item name="bgColor" type="field"/> 
+        <item name="body" type="field"/> 
+        <item name="cookie" type="field"/> 
+        <item name="defaultCharset" type="field"/>
+        <item name="defaultView" type="field"/>
+        <item name="doctype" type="field"/> 
+        <item name="documentElement" type="field"/> 
+        <item name="domain" type="field"/> 
+        <item name="embeds" type="array"/> 
+        <item name="expando" type="field"/> 
+        <item name="fgColor" type="field"/> 
+        <item name="fileCreatedDate" type="field"/> 
+        <item name="fileModifiedDate" type="field"/> 
+        <item name="fileSize" type="field"/> 
+        <item name="fileUpdatedDate" type="field"/> 
+        <item name="forms" type="array"/> 
+        <item name="frames" type="array"/> 
+        <item name="height" type="field"/>
+        <item name="ids" type="array"/>
+        <item name="images" type="array"/>
+        <item name="implementation" type="field"/>
+        <item name="lastModified" type="field"/>
+        <item name="layers" type="array"/>
+        <item name="linkColor" type="field"/>
+        <item name="links" type="array"/>
+        <item name="location" type="field"/>
+        <item name="media" type="field"/>
+        <item name="mimeType" type="field"/>
+        <item name="nameProp" type="field"/>
+        <item name="namespaces" type="array"/>
+        <item name="parentWindow" type="field"/>
+        <item name="plugins" type="array"/>
+        <item name="protocol" type="field"/>
+        <item name="readyState" type="field"/>
+        <item name="referrer" type="field"/>
+        <item name="scripts" type="array"/>
+        <item name="security" type="field"/>
+        <item name="selection" type="field"/>
+        <item name="styleSheets" type="array"/>
+        <item name="tags" type="array"/>
+        <item name="title" type="field"/>
+        <item name="URL" type="field"/>
+        <item name="URLUnencoded" type="field"/>
+        <item name="vlinkColor" type="field"/>
+        <item name="width" type="field"/>
+        <item name="getElementById(&lt;b&gt;id&lt;/b&gt;)" type="method"/>
+        <item name="getElementsByName(&lt;b&gt;name&lt;/b&gt;)" type="method"/>
+        <item name="write()" type="method"/>
+        <item name="writeln()" type="method"/>
+        <item name="createTextNode(&lt;b&gt;text&lt;/b&gt;)" type="method"/>
+        <item name="createElement(&lt;b&gt;name&lt;/b&gt;)" type="method"/>      
+        <item name="createAttribute(&lt;b&gt;attributeName&lt;/b&gt;)" type="method"/>     
+        <item name="createComment(&lt;b&gt;comment&lt;/b&gt;)" type="method"/>   
+        <item name="createDocumentFragment()" type="method"/>
+        <item name="onclick" type="event"/>
+        <item name="ondblclick" type="event"/>
+        <item name="onfocus" type="event"/>
+        <item name="onkeydown" type="event"/>
+        <item name="onkeypress" type="event"/>
+        <item name="onkeyup" type="event"/>
+        <item name="onmousedown" type="event"/>
+        <item name="onmousemove" type="event"/>
+        <item name="onmouseout" type="event"/>
+        <item name="onmouseover" type="event"/>
+        <item name="onmouseup" type="event"/>
+        <item name="onresize" type="event"/>
+    </scope>
+    
+    <scope name="string">
+        <item name="anchor(&lt;b&gt;anchorName&lt;/b&gt;)" type="method"/>
+        <item name="big()" type="method"/>
+        <item name="blink()" type="method"/>
+        <item name="bold()" type="method"/>
+        <item name="charAt(&lt;b&gt;index&lt;/b&gt;)" type="method"/>
+        <item name="charCodeAt(&lt;b&gt;index&lt;/b&gt;)" type="method"/>
+        <item name="concat(&lt;b&gt;str&lt;/b&gt;)" type="method"/>
+        <item name="fixed()" type="method"/>
+        <item name="fontcolor(&lt;b&gt;color&lt;/b&gt;)" type="method"/>
+        <item name="fontsize(&lt;b&gt;size&lt;/b&gt;)" type="method"/>
+        <item name="indexOf(&lt;b&gt;searchString[,startOffset]&lt;/b&gt;)" type="method"/>
+        <item name="italics()" type="method"/>
+        <item name="lastIndexOf(&lt;b&gt;searchString [,startOffset]&lt;/b&gt;)" type="method"/>
+        <item name="length" type="field"/>
+        <item name="link(&lt;b&gt;URL&lt;/b&gt;)" type="method"/>
+        <item name="match(&lt;b&gt;regexp&lt;/b&gt;)" type="method"/>
+        <item name="replace(&lt;b&gt;regexp, str&lt;/b&gt;)" type="method"/>
+        <item name="search(&lt;b&gt;regexp&lt;/b&gt;)" type="method"/>
+        <item name="slice(&lt;b&gt;startIndex, endIndex&lt;/b&gt;)" type="method"/>
+        <item name="small()" type="method"/>
+        <item name="split(&lt;b&gt;delemiter [, limit]&lt;/b&gt;)" type="method"/>
+        <item name="strike()" type="method"/>
+        <item name="sub()" type="method"/>
+        <item name="substr(&lt;b&gt;offset [, length]&lt;/b&gt;)" type="method"/>
+        <item name="substr(&lt;b&gt;startOffset, endOffset&lt;/b&gt;)" type="method"/>
+        <item name="sup()" type="method"/>
+        <item name="toLocaleLowerCase()" type="method"/>
+        <item name="toLocaleUpperCase()" type="method"/>
+        <item name="toLowerCase()" type="method"/>
+        <item name="toUpperCase()" type="method"/>
+        <item name="toString()" type="method"/>
+        <item name="valueOf()" type="method"/>      
+    </scope>
+
+    <scope name="String">
+        <item name="fromCharCode(&lt;b&gt;code1, [code2,[...codeN]]&lt;/b&gt;)" type="method"/>
+        <item name="prototype" type="field"/>
+    </scope>
+    
+    <scope name="window">
+        <item name="closed" type="field"/>
+        <item name="defaultStatus" type="field"/>
+        <item name="length" type="field"/>
+        <item name="name" type="field"/>
+        <item name="opener" type="field"/>
+        <item name="parent" type="field"/>
+        <item name="self" type="field"/>
+        <item name="status" type="field"/>
+        <item name="top" type="field"/>
+        <item name="alert(&lt;b&gt;message&lt;/b&gt;)" type="method" />
+        <item name="blur()" type="method"/>
+        <item name="clearInterval(&lt;b&gt;ID&lt;/b&gt;)" type="method"/>
+        <item name="clearTimeout(&lt;b&gt;ID&lt;/b&gt;)" type="method"/>
+        <item name="close()" type="method"/>
+        <item name="confirm(&lt;b&gt;message&lt;/b&gt;)" type="method"/>
+        <item name="focus()" type="method"/>
+        <item name="moveBy(&lt;b&gt;x, y&lt;/b&gt;)" type="method"/>
+        <item name="moveTo(&lt;b&gt;x, y&lt;/b&gt;)" type="method"/>
+        <item name="print()" type="method"/>
+        <item name="prompt(&lt;b&gt;[text, defaultText]&lt;/b&gt;)" type="method"/>
+        <item name="resizeTo(&lt;b&gt;width [, height]&lt;/b&gt;)" type="method"/>
+        <item name="scrollBy(&lt;b&gt;xnum, ynum&lt;/b&gt;)" type="method"/>
+        <item name="scrollTo(&lt;b&gt;xpos, ypos&lt;/b&gt;)" type="method"/>
+        <item name="open(&lt;b&gt;[URL, name, specs, replace]&lt;/b&gt;)" type="method"/>
+        <item name="setInterval(&lt;b&gt;code, millisec [,lang]&lt;/b&gt;)" type="method"/>
+        <item name="setTimeout(&lt;b&gt;code, millisec [,lang]&lt;/b&gt;)" type="method"/>
+        <item name="onblur" type="event"/>
+        <item name="onerror" type="event"/>
+        <item name="onfocus" type="event"/>
+        <item name="onload" type="event"/>
+        <item name="onresize" type="event"/>
+        <item name="onunload" type="event"/>
+    </scope>
+
+    <scope name="location">
+        <item name="hash" type="field"/>
+        <item name="host" type="field"/>
+        <item name="hostname" type="field"/>
+        <item name="href" type="field"/>
+        <item name="pathname" type="field"/>
+        <item name="port" type="field"/>
+        <item name="protocol" type="field"/>
+        <item name="reload(&lt;b&gt;[Unconditional]&lt;/b&gt;)" type="method"/>
+        <item name="replace(&lt;b&gt;URL&lt;/b&gt;)" type="method"/>
+        <item name="search" type="field"/>
+    </scope>
+   
+    <scope name="style">
+        <item name="background" type="field" />
+        <item name="backgroundAttachment" type="field" />
+        <item name="backgroundColor" type="field" />
+        <item name="backgroundImage" type="field" />
+        <item name="backgroundPosition" type="field" />
+        <item name="backgroundPositionX" type="field" />
+        <item name="backgroundPositionY" type="field" />
+        <item name="backgroundRepeat" type="field" />
+        <item name="behavior" type="field" />
+        <item name="border" type="field" />
+        <item name="borderBottom" type="field" />
+        <item name="borderBottomColor" type="field" />
+        <item name="borderBottomStyle" type="field" />
+        <item name="borderBottomWidth" type="field" />
+        <item name="borderCollapse" type="field" />
+        <item name="borderColor" type="field" />
+        <item name="borderLeft" type="field" />
+        <item name="borderLeftColor" type="field" />
+        <item name="borderLeftStyle" type="field" />
+        <item name="borderLeftWidth" type="field" />
+        <item name="borderRight" type="field" />
+        <item name="borderRightColor" type="field" />
+        <item name="borderRightStyle" type="field" />
+        <item name="borderRightWidth" type="field" />
+        <item name="borderSpacing" type="field" />
+        <item name="borderStyle" type="field" />
+        <item name="borderTop" type="field" />
+        <item name="borderTopColor" type="field" />
+        <item name="borderTopStyle" type="field" />
+        <item name="borderTopWidth" type="field" />
+        <item name="borderWidth" type="field" />
+        <item name="bottom" type="field" />
+        <item name="boxSizing" type="field" />
+        <item name="captionSide" type="field" />
+        <item name="clear" type="field" />
+        <item name="clip" type="field" />
+        <item name="bottom" type="field" />
+        <item name="left" type="field" />
+        <item name="right" type="field" />
+        <item name="top" type="field" />
+        <item name="color" type="field" />
+        <item name="content" type="field" />
+        <item name="counterIncrement" type="field" />
+        <item name="counterReset" type="field" />
+        <item name="cssFloat" type="field" />
+        <item name="cursor" type="field" />
+        <item name="direction" type="field" />
+        <item name="display" type="field" />
+        <item name="emptyCells" type="field" />
+        <item name="filter" type="field" />
+        <item name="float" type="field" />
+        <item name="floatStyle" type="field" />
+        <item name="font" type="field" />
+        <item name="fontFamily" type="field" />
+        <item name="fontSize" type="field" />
+        <item name="fontSizeAdjust" type="field" />
+        <item name="fontStretch" type="field" />
+        <item name="fontStyle" type="field" />
+        <item name="fontVariant" type="field" />
+        <item name="fontWeight" type="field" />
+        <item name="height" type="field" />
+        <item name="left" type="field" />
+        <item name="letterSpacing" type="field" />
+        <item name="lineHeight" type="field" />
+        <item name="listStyle" type="field" />
+        <item name="listStyleImage" type="field" />
+        <item name="listStylePosition" type="field" />
+        <item name="listStyleType" type="field" />
+        <item name="margin" type="field" />
+        <item name="marginBottom" type="field" />
+        <item name="marginLeft" type="field" />
+        <item name="marginRight" type="field" />
+        <item name="marginTop" type="field" />
+        <item name="markerOffset" type="field" />
+        <item name="marks" type="field" />
+        <item name="maxHeight" type="field" />
+        <item name="maxWidth" type="field" />
+        <item name="minHeight" type="field" />
+        <item name="minWidth" type="field" />
+        <item name="orphans" type="field" />
+        <item name="outline" type="field" />
+        <item name="outlineColor" type="field" />
+        <item name="outlineStyle" type="field" />
+        <item name="outlineWidth" type="field" />
+        <item name="overflow" type="field" />
+        <item name="overflowX" type="field" />
+        <item name="overflowY" type="field" />
+        <item name="padding" type="field" />
+        <item name="paddingBottom" type="field" />
+        <item name="paddingLeft" type="field" />
+        <item name="paddingRight" type="field" />
+        <item name="paddingTop" type="field" />
+        <item name="page" type="field" />
+        <item name="pageBreakAfter" type="field" />
+        <item name="pageBreakBefore" type="field" />
+        <item name="pageBreakInside" type="field" />
+        <item name="right" type="field" />
+        <item name="styleFloat" type="field" />
+        <item name="tableLayout" type="field" />
+        <item name="textAlign" type="field" />
+        <item name="textDecoration" type="field" />
+        <item name="textDecorationBlink" type="field" />
+        <item name="textDecorationLineThrough" type="field" />
+        <item name="textDecorationNone" type="field" />
+        <item name="textDecorationOverline" type="field" />
+        <item name="textDecorationUnderline" type="field" />
+        <item name="textIndent" type="field" />
+        <item name="textShadow" type="field" />
+        <item name="textTransform" type="field" />
+        <item name="top" type="field" />
+        <item name="unicodeBidi" type="field" />
+        <item name="verticalAlign" type="field" />
+        <item name="visibility" type="field" />
+        <item name="voiceFamily" type="field" />
+        <item name="volume" type="field" />
+        <item name="whiteSpace" type="field" />
+        <item name="widows" type="field" />
+        <item name="width" type="field" />
+        <item name="wordBreak" type="field" />
+        <item name="wordSpacing" type="field" />
+        <item name="zIndex" type="field" />
+    </scope>
+</completion>
